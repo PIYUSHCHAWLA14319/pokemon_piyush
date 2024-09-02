@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  width: 100%;
+  /* background-color:#CCD5AE; */
+}
+.mycard{
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  background-color: #fff;
+  /* border: 1px solid gray; */
+  
+}
+.pokeMonCard{
+  background-color:#fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+  border-top-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+
+h1{
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000;
+  /* text-shadow: 2px 1px 2px #000; */
+
+
+}
+figure{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+ filter: drop-shadow(0px 50px 100px rgba(50,50,93,0.25));
+}
+.imgBok{
+  width: 60%;
+ height: 15rem;
+}
+.containerBox{
+  margin: 5px auto;
+  display: flex;
+}
+.pokemonInfo{
+  margin-right:5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color:blueviolet;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+.pokemonInfo span{
+  font-size: 1.5rem;
+
+}
+
+button{
+  background-color: #5795d3;
+  /* padding: 7px 53px; */
+  padding: 10px 0;
+  outline: none;
+  border: none;
+   width: 50%;
+   font-weight: 700;
+   color: #fff;
+   font-size: 1.5rem;
+   border-radius: 30px;
+   margin-top: 10px;
+}
+
+header h1{
+   font-size: 7rem;
+   text-shadow: 2px 2px 2px blue;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pokemonSearch{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  
+}
+.pokemonSearch input{
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid gray;
+  outline: none;
+  font-size: 2rem;
+  border-radius: 2rem;
+}
+
+
+@media only screen and (max-width: 480px) {
+ 
+
+  header h1{
+    font-size: 4rem;
+
+ }
+ .pokemonSearch input{
+  width: 100%;
+  padding: 15px;
+  text-align:left;
+
+}
+}
+
+
